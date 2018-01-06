@@ -27,7 +27,9 @@ Go to amazon.co.uk and log in.
 Note that if you want to use .de or .com, you'll have to change the URLs in the code by hand.
 ```
 >>> songs = dandelion.load_playlist("sample_playlist_kukeleku.csv")
->>> dandelion.test(driver, songs, 5)
+>>> dandelion.test(driver, songs, 10)
+Unable to add "Jewel - Bombay Bicycle Club" to cart
+No results for "For What It's Worth (India Dub) DJ Drez, Joey Lugassy Jahta Beat: The Lotus Memoirs"
 ```
-The `test` function will try to add the first 5 songs of the playlist to your Amazon MP3 cart. The programm wil display an error message if a song can't be found or added to your cart. 
+The `test` function will try to add the first 10 songs of the playlist to your Amazon MP3 cart. The program wil display an error message if a song can't be found or added to your cart. 
 

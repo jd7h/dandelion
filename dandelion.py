@@ -69,9 +69,9 @@ def login(driver,email,password):
     passwordbox.send_keys(password)
     passwordbox.submit()
 
-def test(driver,songs,n=5):
-    if tracks == [] or n >= len(tracks):
-        n = len(tracks)
+def test(driver,songs,n=10):
+    if songs == [] or n >= len(songs):
+        n = len(songs)
     for song in songs[:n]:
         term = " ".join([song['title'],song['artist'],song['album']])
         tracks = search_amazon(driver, term)
@@ -84,7 +84,7 @@ def __main__(filename):
     driver = get_driver()
     # log in at amazon website
     songs = load_playlist("sample_playlist_kukeleku.csv")
-    test(driver, songs, 5)
+    test(driver, songs, 10)
     driver.get("https://www.amazon.co.uk/gp/dmusic/purchase/cartReview/")
     '''
 

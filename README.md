@@ -11,8 +11,9 @@ This small Python program was written to "export" my Spotify playlists to DRM-fr
 
 ## Prerequisites
 
-- python3
-- selenium
+- Python3
+- Selenium
+- A csv-file that contains the title, artist and album name of all songs from a playlist. I used [Exportify](https://rawgit.com/watsonbox/exportify/master/exportify.html) to export my Spotify playlists to csv.
 
 ## Usage and output
 I have provided a sample csv that you can use to test the program. The CSV contains the title, artist and album name of all songs from my playlist "Kukeleku".
